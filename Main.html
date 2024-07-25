@@ -1,0 +1,445 @@
+<head>
+    <meta charset="UTF-8">
+    <style data-styles="">
+        ion-icon {
+            visibility: hidden
+        }
+
+        .hydrated {
+            visibility: inherit
+        }
+
+        body {
+            padding-top: 1px !important;
+        }
+    </style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peacock</title>
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&amp;family=Roboto:wght@400;500;700&amp;display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+
+    <script src="./assets/js/cart-modal.js"></script>
+    <script src="./assets/js/image-error.js"></script>
+    <script src="./assets/js/fetch-free.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+</head>
+<main>
+    <div class="preloader" id="preloader">
+        <img src="favicon.png" alt="Your Image" width="40" height="40">
+        <div class="loader"></div>
+    </div>
+    <article id="mainpage">
+
+
+        <section class="section hero" style="background-image: url('https://i.imgur.com/pklZOQh.jpg')">
+            <div class="container">
+
+                <h2 class="h1 hero-title">
+                    New Summer <strong>Clothes Collection</strong>
+                </h2>
+
+                <p class="hero-text">
+                    Our commitment to quality ensures that each piece you purchase is crafted from the finest materials,
+                    offering unmatched
+                    comfort and durability.
+                </p>
+                <a href="./Products.html">
+                    <button class="btn-shopnow">
+                        <span>Shop Now</span>
+
+                        <ion-icon name="arrow-forward-outline" aria-hidden="true" role="img"
+                            class="md hydrated"></ion-icon>
+                    </button>
+                </a>
+
+
+            </div>
+
+        </section>
+
+        <!-- <div class="scroll-container flex space-around height-max">
+            <div class="flex center align-items m-20">
+                <h4>Shop By Piece</h4>
+            </div>
+
+            <div class="scroll-container">
+                <a href="./Category.html?piece=T-shirt">
+                    <div class="scroll-item" style="background-image: url('https://i.imgur.com/0sakCXs_d.webp?maxwidth=760&fidelity=grand');">
+                        <div class="overlay-category">
+                            <i class="bi bi-arrow-right-short"></i>
+                            T-shirts
+                        </div>
+                    </div>
+                </a>
+                <a href="./Category.html?piece=Jeans">
+                    <div class="scroll-item" style="background-image: url('https://i.imgur.com/mncaF0c_d.webp?maxwidth=760&fidelity=grand');">
+                        <div class="overlay-category">
+                            <i class="bi bi-arrow-right-short"></i>
+                            Jeans
+                        </div>
+                    </div>
+                </a>
+                <a href="./Category.html?piece=Short">
+                    <div class="scroll-item" style="background-image: url('https://i.imgur.com/ErdoQyD_d.webp?maxwidth=760&fidelity=grand');">
+                        <div class="overlay-category">
+                            <i class="bi bi-arrow-right-short"></i>
+                            Shorts
+                        </div>
+                    </div>
+                </a>
+                <a href="./Category.html?piece=Shirt">
+                    <div class="scroll-item" style="background-image: url('https://i.imgur.com/Znqhncx_d.webp?maxwidth=760&fidelity=grand');">
+                        <div class="overlay-category">
+                            <i class="bi bi-arrow-right-short"></i>
+                            Shirts
+                        </div>
+                    </div>
+                </a>
+                <a href="./Category.html?piece=Swimwear">
+                    <div class="scroll-item" style="background-image: url('https://i.imgur.com/xzdoYtt_d.webp?maxwidth=760&fidelity=grand');">
+                        <div class="overlay-category">
+                            <i class="bi bi-arrow-right-short"></i>
+                            Swim Short
+                        </div>
+                    </div>
+                </a>
+                <a href="./Category.html?piece=Underwear">
+                    <div class="scroll-item" style="background-image: url('https://i.imgur.com/iEoH0Vs_d.webp?maxwidth=760&fidelity=grand');">
+                        <div class="overlay-category">
+                            <i class="bi bi-arrow-right-short"></i>
+                            Underwear
+                        </div>
+                    </div>
+                </a>
+
+
+            </div>
+
+
+           
+
+        </div> -->
+
+
+
+        <section class="section collection" style="padding-top: 60px !important;">
+            <div class="container">
+
+                <ul class="collection-list has-scrollbar" style="justify-content: center;">
+
+                    <li>
+                        <div class="collection-card height-400"
+                            style="background-image: url('https://imgur.com/ieolMLf.jpg')">
+                            <h3 class="h4 card-title white-font">Womens Collections</h3>
+
+                            <a href="./Category.html?category=women" type="Womens" class="btn btn-secondary">
+                                <span class="white-font">Explore All</span>
+
+                                <ion-icon name="arrow-forward-outline" aria-hidden="true" role="img"
+                                    class="md hydrated"></ion-icon>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collection-card height-400"
+                            style="background-image: url('https://imgur.com/2VvGCfD.jpg')">
+                            <h3 class="h4 card-title white-font">Kids Collections</h3>
+
+                            <a href="./Category.html?category=kids" type="Kids" class="btn btn-secondary">
+                                <span>Explore All</span>
+
+                                <ion-icon name="arrow-forward-outline" aria-hidden="true" role="img"
+                                    class="md hydrated"></ion-icon>
+                            </a>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+
+
+
+
+        <!-- 
+        - #COLLECTION
+      -->
+
+
+
+
+
+
+
+        <!-- 
+        - #PRODUCT
+      -->
+
+        <section class="section product">
+            <div class="container">
+
+                <h2 class="h2 section-title">Products Overview</h2>
+
+
+
+                <ul class="product-overview">
+
+
+
+                </ul>
+
+                <div class="flex center align-items m-50">
+                    <button id="more_product" class="cus-btn" onclick="more_product()">Show All
+                        <i class="bi bi-plus"></i>
+                    </button>
+                </div>
+
+
+
+
+
+            </div>
+        </section>
+
+
+        <section class="section special new-arri">
+            <div class="container">
+
+                <div class="special-banner center" style="background-image: url('https://imgur.com/aC8iaVA.jpg')">
+                    <h2 class="h3 banner-title">New In Queens</h2>
+
+
+                </div>
+
+                <div class="special-product">
+
+                    <h2 class="h2 section-title">
+                        <span class="text">New Arrivalls</span>
+
+                        <span class="line"></span>
+                    </h2>
+
+                    <ul class="has-scrollbar" id="NewArrivalls">
+
+
+
+
+
+                    </ul>
+
+                </div>
+
+            </div>
+        </section>
+        <section class="section special sales-div">
+            <div class="container flex-direction-row-rev">
+
+                <div class="special-banner center" style="background-image: url('https://i.imgur.com/DWOHlNJ.jpg')">
+                    <h2 class="h3 banner-title">Sale In Queens</h2>
+
+
+                </div>
+
+                <div class="special-product">
+
+                    <h2 class="h2 section-title flex-direction-row-rev">
+                        <span class="text">Sale</span>
+
+                        <span class="line"></span>
+                    </h2>
+
+                    <ul class="has-scrollbar flex-direction-row-rev" id="Sale">
+
+
+
+
+                    </ul>
+
+                </div>
+
+            </div>
+        </section>
+
+
+    </article>
+</main>
+
+<!-- Modal structure -->
+<div class="modal">
+
+    <div class="modal-content">
+
+    </div>
+
+
+</div>
+
+<footer class="footer">
+
+    <div class="footer-top section">
+        <div class="container">
+
+            <div class="footer-brand">
+
+                <a href="#" class="logo">
+                    <img src="./assets/images/iicon.svg" width="160" height="50" alt="RitzyStock">
+                </a>
+
+                <ul class="social-list hidden">
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-facebook" role="img" class="md hydrated"
+                                aria-label="logo facebook"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-twitter" role="img" class="md hydrated"
+                                aria-label="logo twitter"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-pinterest" role="img" class="md hydrated"
+                                aria-label="logo pinterest"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-linkedin" role="img" class="md hydrated"
+                                aria-label="logo linkedin"></ion-icon>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="footer-end flex space-around">
+
+                <ul class="footer-list">
+
+                    <li>
+                        <p class="footer-list-title">Contact Us</p>
+                    </li>
+
+                    <li>
+                        <address class="footer-link hidden">
+                            <ion-icon name="location" role="img" class="md hydrated" aria-label="location"></ion-icon>
+
+                            <span class="footer-link-text">
+                                type any addrress
+                            </span>
+                        </address>
+                    </li>
+
+                    <li>
+                        <a href="tel:+20 122 838 3723" class="footer-link">
+                            <ion-icon name="call" role="img" class="md hydrated" aria-label="call"></ion-icon>
+
+                            <span class="footer-link-text">+20 122 838 3723</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="mailto:ritzystock11@gmail.com" class="footer-link">
+                            <ion-icon name="mail" role="img" class="md hydrated" aria-label="mail"></ion-icon>
+
+                            <span class="footer-link-text">ritzystock11@gmail.com</span>
+                        </a>
+                    </li>
+
+                </ul>
+
+
+
+                <div class="footer-list">
+
+                    <p class="footer-list-title">Newsletter</p>
+
+                    <p class="newsletter-text">
+                        Send us your email to keeping up with our latest updates..
+                    </p>
+
+                    <form action="" class="newsletter-form">
+                        <input type="email" name="email" required="" placeholder="Email Address"
+                            class="newsletter-input">
+
+                        <button type="submit" class="btn2 btn-primary">Subscribe</button>
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+</footer>
+
+
+
+
+
+<!-- 
+    - #GO TO TOP
+  -->
+
+<a href="#top" class="go-top-btn" data-go-top="">
+    <ion-icon name="arrow-up-outline" role="img" class="md hydrated" aria-label="arrow up outline"></ion-icon>
+</a>
+<!-- 
+    - custom js link
+  -->
+
+
+<!-- //ionicon link -->
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule="" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script>
+
+    const goTopBtn = document.querySelector("[data-go-top]");
+
+    window.addEventListener("scroll", function () {
+        if (window.scrollY >= 80) {
+
+            goTopBtn.classList.add("active");
+        } else {
+
+            goTopBtn.classList.remove("active");
+        }
+    });
+</script>
+<script src="./assets/js/route.js"></script>
+
+<script src="./assets/js/flip-img.js"></script>

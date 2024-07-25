@@ -1,0 +1,187 @@
+<head>
+    <meta charset="UTF-8">
+    <style data-styles="">
+        ion-icon {
+            visibility: hidden
+        }
+
+        .hydrated {
+            visibility: inherit
+        }
+
+        body {
+            padding-top: 1px !important;
+        }
+    </style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peacock</title>
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&amp;family=Roboto:wght@400;500;700&amp;display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+    <!-- 
+    - preload banner
+  -->
+
+
+    <script src="./assets/js/cart-modal.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+</head>
+
+
+
+
+<footer class="footer">
+
+    <div class="footer-top section">
+        <div class="container">
+
+            <div class="footer-brand hidden">
+
+                <a href="#" class="logo">
+                    <img src="./assets/images/logo.svg" width="160" height="50" alt="RitzyStock">
+                </a>
+
+                <ul class="social-list hidden">
+
+                    <li>
+                        <a href="" class="social-link">
+                            <ion-icon name="logo-facebook" role="img" class="md hydrated"
+                                aria-label="logo facebook"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="" class="social-link">
+                            <ion-icon name="logo-instagram" role="img" class="md hydrated"
+                                aria-label="logo instagram"></ion-icon>
+
+                        </a>
+                    </li>
+
+
+                </ul>
+
+            </div>
+
+            <div class="footer-end flex space-around">
+
+                <ul class="footer-list">
+
+                    <li>
+                        <p class="footer-list-title">Contact Us</p>
+                    </li>
+
+                    <li>
+                        <address class="footer-link hidden">
+                            <ion-icon name="location" role="img" class="md hydrated" aria-label="location"></ion-icon>
+
+                            <span class="footer-link-text">
+                                type any addrress
+                            </span>
+                        </address>
+                    </li>
+
+                    <li>
+                        <a href="tel:+20 122 838 3723" class="footer-link">
+                            <ion-icon name="call" role="img" class="md hydrated" aria-label="call"></ion-icon>
+
+                            <span class="footer-link-text">+20 122 838 3723</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="mailto:ritzystock11@gmail.com" class="footer-link">
+                            <ion-icon name="mail" role="img" class="md hydrated" aria-label="mail"></ion-icon>
+
+                            <span class="footer-link-text">ritzystock11@gmail.com</span>
+                        </a>
+                    </li>
+
+                </ul>
+
+
+
+                <div class="footer-list">
+
+                    <p class="footer-list-title">Newsletter</p>
+
+                    <p class="newsletter-text">
+                        Send us your email to keeping up with our latest updates..
+                    </p>
+
+                    <form action="" class="newsletter-form">
+                        <input type="email" name="email" required="" placeholder="Email Address"
+                            class="newsletter-input">
+
+                        <button type="submit" class="btn2 btn-primary">Subscribe</button>
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+</footer>
+
+
+
+
+
+<!-- 
+    - #GO TO TOP
+  -->
+
+<a href="#top" class="go-top-btn" data-go-top="">
+    <ion-icon name="arrow-up-outline" role="img" class="md hydrated" aria-label="arrow up outline"></ion-icon>
+</a>
+<!-- 
+    - custom js link
+  -->
+
+
+<!-- //ionicon link -->
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule="" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script>
+
+    const goTopBtn = document.querySelector("[data-go-top]");
+
+    window.addEventListener("scroll", function () {
+        if (window.scrollY >= 80) {
+
+            goTopBtn.classList.add("active");
+        } else {
+
+            goTopBtn.classList.remove("active");
+        }
+    });
+</script>
+<script src="./assets/js/route.js"></script>
